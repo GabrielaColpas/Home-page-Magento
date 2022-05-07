@@ -2,7 +2,7 @@ var config = {
     urlArgs: 'bust=' + new Date().getTime(),
     map: {
         '*': {
-            banner: 'js/banner'
+            banner: 'js/banner',
         },
     },
     paths: {

@@ -2,7 +2,8 @@ require([
 	'jquery',
 	'slick'
 ], function($){
-	$(document).ready(function () {
-		$('#banner').slick();
-	})
+	$('#banner').slick({
+	  	autoplay: true,
+	  	autoplaySpeed: 2000,
+	});
 })
