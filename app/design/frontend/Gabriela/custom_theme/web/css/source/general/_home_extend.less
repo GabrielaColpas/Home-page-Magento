@@ -5,13 +5,13 @@
 				.columns{
 					.column.main{
 						.container_home{
-							margin: 30px auto;
+							margin: 50px auto;
 						}
 						.container_banner{
+							margin-top: 0px;
+
 							.slick-arrow{ //buttons banner
-								height: 4rem;
-								width: 4rem;
-								border-radius: @button__border-radius;
+								.btn-slick();
 
 								&::before{
 									font-size: 2rem
@@ -19,7 +19,8 @@
 							}
 							.box_banner{
 								.content_banner{
-									
+									max-width: 1200px;
+									width: 100%;
 								}
 							}
 						}
@@ -49,7 +50,10 @@
 								}
 							}
 						}
-						.container_grid-banner{
+						.container_grid-banner{ //grid banner
+							.text-subtitle{
+								text-align: center;
+							}
 							.box_grid-banner{
 								.row{
 									.responsive-grid();

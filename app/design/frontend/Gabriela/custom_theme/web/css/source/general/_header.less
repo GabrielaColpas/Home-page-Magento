@@ -1,0 +1,79 @@
+& when (@media-common = true){
+	.page-wrapper{
+		.page-header{
+			background-image: url('@{baseDir}images/background-road.jpg');
+			background-size: cover;
+			background-position: center;
+
+			a, .panel.header{ //color all text in header
+				color: @color-white;
+			}
+
+			.header.content{ //container logo, search and minicart
+				.action.nav-toggle{ //icon menu mobile
+					&::before{
+						color: @color-white;
+					}
+				}
+				.minicart-wrapper{
+					.action.showcart{//color minicart
+						&::before{
+							color: @color-white;
+						}
+					}
+				}
+				.block-search{
+					.minisearch{ //icon search mobile
+						.label{
+							&::before{
+								color:@color-white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+	.page-wrapper{
+		.page-header{
+			background-image: url('@{baseDir}images/background-road.jpg');
+			background-size: cover;
+			background-position: center;
+
+			a, .panel.header{ //color all text in header
+				color: @color-white;
+			}
+
+			.header.content{ //container logo, search and minicart
+				.logo{
+					margin: -30px auto 25px 0;
+				}
+				.action.nav-toggle{ //icon menu mobile
+					&::before{
+						color: @color-white;
+					}
+				}
+				.minicart-wrapper{
+					.action.showcart{//color minicart
+						&::before{
+							color: @color-white;
+						}
+					}
+				}
+				.block-search{
+					.minisearch{ //icon search mobile
+						.label{
+							&::before{
+								color:@color-white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

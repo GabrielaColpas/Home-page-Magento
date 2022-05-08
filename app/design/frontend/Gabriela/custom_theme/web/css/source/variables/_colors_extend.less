@@ -99,21 +99,25 @@
 @color-yellow-light3: #d6ca8e;
 @color-yellow1: #ff0;
 
+@color-green-dark: #29836a;
+@color-green-middle: #6f9a37;
+@color-green-light: #82b440;
+
 //
 //  Color nesting
 //  ---------------------------------------------
 
-@theme__color__primary: @color-blue1;
-@theme__color__primary-alt: @color-blue2;
-@theme__color__secondary: @color-orange-red1;
+@theme__color__primary: @color-green-dark;
+@theme__color__primary-alt: @color-green-light;
+@theme__color__secondary: @color-green-light;
 
-@primary__color: @color-gray20;
+@primary__color: @color-gray-darken4;
 @primary__color__dark: darken(@primary__color, 35%); // #000
 @primary__color__darker: darken(@primary__color, 13.5%); // #111
 @primary__color__lighter: lighten(@primary__color, 29%); // #7d7d7d
 @primary__color__light: lighten(@primary__color, 45%); // #a6a6a6
 
-@secondary__color: @color-gray91;
+@secondary__color: @color-green-light;
 @secondary__color__light: lighten(@secondary__color, 5%);
 
 @page__background-color: @color-white;
