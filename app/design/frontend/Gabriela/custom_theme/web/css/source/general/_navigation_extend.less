@@ -27,7 +27,7 @@
     @_nav-level0-item__active__border-color: @navigation-level0-item__active__border-color,
     @_nav-level0-item__active__border-style: @navigation-level0-item__active__border-style,
     @_nav-level0-item__active__border-width: @navigation-level0-item__active__border-width,
-    @_nav-level0-item-color-active: @color-green-dark,
+    @_nav-level0-item-color-active: @color-green-light,
     @_nav-level0-item-text-decoration-active: @navigation-level0-item__active__text-decoration,
 
     @_submenu-background-color: @submenu__background,
@@ -53,6 +53,16 @@
     @_submenu-item-color-active: @submenu-item__active__color,
     @_submenu-item-text-decoration-active: @submenu-item__active__text-decoration
 ) {
+    .nav-sections-item-switch{
+        color: @color-white;
+    }
+    .header.links{
+        color: @color-white;
+
+        a{
+            color: @color-white !important; 
+        }
+    }
     .navigation {
         .lib-css(background, @_nav-background-color);
         .lib-css(border, @_nav-border);
