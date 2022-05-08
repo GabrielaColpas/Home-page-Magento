@@ -1,0 +1,46 @@
+& when (@media-common = true){
+	.page-footer{
+		background-color: @color-green-dark;
+
+		a, .title-footer, .copyright{
+			color: @color-white;
+		}
+		.action.subscribe.primary{
+			background: @color-green-light;
+			border-color: @color-green-light;
+			color: @color-green-dark;
+			
+
+			&:hover{
+				background: @color-white;
+				border-color: @color-white;
+				color: @color-green-dark;
+			}
+		}
+
+		.footer.content{
+			.block.newsletter{
+				margin-bottom: 10px;
+
+				.content{
+					.subscribe{
+						.field.newsletter{
+							input{
+								border-top-left-radius: @button__border-radius;
+								border-bottom-left-radius: @button__border-radius;
+								border-color: @color-white;
+							}
+						}
+					}
+				}
+			}
+			.footer.links{
+				margin: 20px 0 20px 10px;
+			}
+			.copyright{
+				text-align: center;
+			}
+		}
+	}
+}
+
