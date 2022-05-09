@@ -2,6 +2,6 @@
     <title>Custom Theme</title> 
     <parent>Magento/blank</parent> 
     <media>
-     	<preview_image>media/preview.jng</preview_image>
+     	<preview_image>media/preview.png</preview_image>
    </media>
 </theme>
